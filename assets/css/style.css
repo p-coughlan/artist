@@ -19,12 +19,14 @@ remove hyperlink underline from H1 logo
 .background {     /* make opaque*/
 
     height: 100%;
+    width: 100%;
+    background-color: white;
     background: url('../img/white_wall.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: fill auto;
     background-position: center;
     overflow: hidden;
-    /*filter: opacity(50%);**/
+    /*filter: opacity(50%);*/
 }
 
 body {
@@ -60,6 +62,8 @@ style h1 and h2 logo separately
     text-align: center;
     margin-top: 10px;
     text-decoration: none;
+    margin-top: 30px;
+    line-height: 95%;
 }
 
 #logo_h2 {
@@ -67,6 +71,10 @@ style h1 and h2 logo separately
     text-align: center;
     text-decoration: none;
 }
+
+a:link {
+    text-decoration: none;
+  }
 
 #navigation {
     width: 100%;
@@ -83,22 +91,23 @@ ul {
 #pages li {
     width: auto;
     display: inline;
+    gap: 30%;
+    border: 30px;
 }
 
-/*
+
 .gallery {
     width: 200px;
     height: 200px;
     margin: 0 auto;
     padding: 30px;
 }
-*/
-
+/*
 .galleryname {
     text-align: center;
     margin: 0 auto;
 }
-
+*/
 
 .print_thumb {
     height: 200px;
@@ -175,7 +184,34 @@ BELOW NEEDS TWEAKING
     color: #3a3a3a;
 }
 
+.copyright {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
+.div-link {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  /*.paragraph {
+    display: none; /* Hide paragraph on mobile */
+  
+  
+  /* Media query for tablet and desktop */
+  @media screen and (min-width: 768px) {
+    .print_thumb, .photo_thumb, .other_thumb {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin: 0;
+    }
+}
+  
+    /*.paragraph {
+      display: block; /* Show paragraph on tablet and desktop */
 /*
 COMMENTS
 */
