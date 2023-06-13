@@ -1,0 +1,297 @@
+codeany@755fec887b71:/workspaces/artist$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   about.html
+        modified:   assets/css/style.css
+        modified:   contact.html
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/img/frame_resized.jpg
+        assets/img/white_wall_copy.jpg
+        print.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+codeany@755fec887b71:/workspaces/artist$ git add .
+codeany@755fec887b71:/workspaces/artist$ 
+codeany@755fec887b71:/workspaces/artist$ git commit -m "add index page"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'codeany@755fec887b71.(none)')
+codeany@755fec887b71:/workspaces/artist$ git config --global user.email "patrickcoughlan@yahoo.co.uk" 
+codeany@755fec887b71:/workspaces/artist$ git config --global user.name "Patrick Coughlan"             
+codeany@755fec887b71:/workspaces/artist$ git commit -m "add index page"
+[main 6926d25] add index page
+ 8 files changed, 327 insertions(+), 38 deletions(-)
+ create mode 100644 assets/img/frame_resized.jpg
+ create mode 100644 assets/img/white_wall_copy.jpg
+ create mode 100644 print.html
+codeany@755fec887b71:/workspaces/artist$ git push
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/p-coughlan/artist/'
+codeany@755fec887b71:/workspaces/artist$ git push
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+To https://github.com/p-coughlan/artist
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/p-coughlan/artist'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+codeany@755fec887b71:/workspaces/artist$ git push --force
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+Enumerating objects: 43, done.
+Counting objects: 100% (43/43), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (43/43), 4.38 MiB | 5.76 MiB/s, done.
+Total 43 (delta 13), reused 9 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), done.
+remote: error: GH007: Your push would publish a private email address.
+remote: You can make your email public or disable this protection by visiting:
+remote: http://github.com/settings/emails
+To https://github.com/p-coughlan/artist
+ ! [remote rejected] main -> main (push declined due to email privacy restrictions)
+error: failed to push some refs to 'https://github.com/p-coughlan/artist'
+codeany@755fec887b71:/workspaces/artist$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+127.0.0.1 - - [13/Jun/2023 18:56:00] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:58:48] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:58:49] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:59:50] "GET /contact.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 18:59:52] "GET /assets/img/frame_resized.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:00:12] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:30] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:05:35] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /print.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /assets/img/push_button.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:39] "GET /assets/img/white_wall_copy.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:40] code 404, message File not found
+127.0.0.1 - - [13/Jun/2023 19:05:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [13/Jun/2023 19:06:25] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:06:26] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:07:55] "GET /about.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:07:56] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:08:07] "GET /assets/css/style.css HTTP/1.1" 304 -
+codeany@755fec887b71:/workspaces/artist$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   about.html
+        modified:   assets/css/style.css
+        modified:   contact.html
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/img/frame_resized.jpg
+        assets/img/white_wall_copy.jpg
+        print.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+codeany@755fec887b71:/workspaces/artist$ git add .
+codeany@755fec887b71:/workspaces/artist$ 
+codeany@755fec887b71:/workspaces/artist$ git commit -m "add index page"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'codeany@755fec887b71.(none)')
+codeany@755fec887b71:/workspaces/artist$ git config --global user.email "patrickcoughlan@yahoo.co.uk" 
+codeany@755fec887b71:/workspaces/artist$ git config --global user.name "Patrick Coughlan"             
+codeany@755fec887b71:/workspaces/artist$ git commit -m "add index page"
+[main 6926d25] add index page
+ 8 files changed, 327 insertions(+), 38 deletions(-)
+ create mode 100644 assets/img/frame_resized.jpg
+ create mode 100644 assets/img/white_wall_copy.jpg
+ create mode 100644 print.html
+codeany@755fec887b71:/workspaces/artist$ git push
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/p-coughlan/artist/'
+codeany@755fec887b71:/workspaces/artist$ git push
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+To https://github.com/p-coughlan/artist
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/p-coughlan/artist'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+codeany@755fec887b71:/workspaces/artist$ git push --force
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+Enumerating objects: 43, done.
+Counting objects: 100% (43/43), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (43/43), 4.38 MiB | 5.76 MiB/s, done.
+Total 43 (delta 13), reused 9 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), done.
+remote: error: GH007: Your push would publish a private email address.
+remote: You can make your email public or disable this protection by visiting:
+remote: http://github.com/settings/emails
+To https://github.com/p-coughlan/artist
+ ! [remote rejected] main -> main (push declined due to email privacy restrictions)
+error: failed to push some refs to 'https://github.com/p-coughlan/artist'
+codeany@755fec887b71:/workspaces/artist$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+127.0.0.1 - - [13/Jun/2023 18:56:00] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:58:48] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:58:49] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:59:50] "GET /contact.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 18:59:52] "GET /assets/img/frame_resized.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:00:12] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:30] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:05:35] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /print.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /assets/img/push_button.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:39] "GET /assets/img/white_wall_copy.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:40] code 404, message File not found
+127.0.0.1 - - [13/Jun/2023 19:05:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [13/Jun/2023 19:06:25] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:06:26] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:07:55] "GET /about.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:07:56] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:08:07] "GET /assets/css/style.css HTTP/1.1" 304 -
+codeany@755fec887b71:/workspaces/artist$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   about.html
+        modified:   assets/css/style.css
+        modified:   contact.html
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/img/frame_resized.jpg
+        assets/img/white_wall_copy.jpg
+        print.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+codeany@755fec887b71:/workspaces/artist$ git add .
+codeany@755fec887b71:/workspaces/artist$ 
+codeany@755fec887b71:/workspaces/artist$ git commit -m "add index page"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'codeany@755fec887b71.(none)')
+codeany@755fec887b71:/workspaces/artist$ git config --global user.email "patrickcoughlan@yahoo.co.uk" 
+codeany@755fec887b71:/workspaces/artist$ git config --global user.name "Patrick Coughlan"             
+codeany@755fec887b71:/workspaces/artist$ git commit -m "add index page"
+[main 6926d25] add index page
+ 8 files changed, 327 insertions(+), 38 deletions(-)
+ create mode 100644 assets/img/frame_resized.jpg
+ create mode 100644 assets/img/white_wall_copy.jpg
+ create mode 100644 print.html
+codeany@755fec887b71:/workspaces/artist$ git push
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/p-coughlan/artist/'
+codeany@755fec887b71:/workspaces/artist$ git push
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+To https://github.com/p-coughlan/artist
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/p-coughlan/artist'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+codeany@755fec887b71:/workspaces/artist$ git push --force
+Username for 'https://github.com': p-coughlan
+Password for 'https://p-coughlan@github.com': 
+Enumerating objects: 43, done.
+Counting objects: 100% (43/43), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (43/43), 4.38 MiB | 5.76 MiB/s, done.
+Total 43 (delta 13), reused 9 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), done.
+remote: error: GH007: Your push would publish a private email address.
+remote: You can make your email public or disable this protection by visiting:
+remote: http://github.com/settings/emails
+To https://github.com/p-coughlan/artist
+ ! [remote rejected] main -> main (push declined due to email privacy restrictions)
+error: failed to push some refs to 'https://github.com/p-coughlan/artist'
+codeany@755fec887b71:/workspaces/artist$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+127.0.0.1 - - [13/Jun/2023 18:56:00] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:58:48] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:58:49] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 18:59:50] "GET /contact.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 18:59:52] "GET /assets/img/frame_resized.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:00:12] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:30] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:05:35] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /print.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:38] "GET /assets/img/push_button.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:39] "GET /assets/img/white_wall_copy.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:05:40] code 404, message File not found
+127.0.0.1 - - [13/Jun/2023 19:05:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [13/Jun/2023 19:06:25] "GET /print.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:06:26] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:07:55] "GET /about.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jun/2023 19:07:56] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jun/2023 19:08:07] "GET /assets/css/style.css HTTP/1.1" 304 -
