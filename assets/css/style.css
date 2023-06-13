@@ -21,9 +21,9 @@ remove hyperlink underline from H1 logo
     height: 100%;
     width: 100%;
     background-color: white;
-    background: url('../img/white_wall.png');
+    background: url('../img/white_wall_copy.jpg');
     background-repeat: no-repeat;
-    background-size: fill auto;
+    /*background-size: fill auto;*/
     background-position: center;
     overflow: hidden;
     /*filter: opacity(50%);*/
@@ -93,14 +93,58 @@ ul {
     display: inline;
     gap: 30%;
     border: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
 }
 
-
+/* IS THIS RULE OBSELETE?
 .gallery {
     width: 200px;
     height: 200px;
     margin: 0 auto;
     padding: 30px;
+}
+*/
+
+#gallery_thumbs {
+    text-align: center;
+}
+
+.thumb_container {
+    margin: 5vw;
+}
+
+.thumb {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border: 1px solid #555;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.print {
+    background-image: url('../img/push_button.jpg');
+}
+
+.photo {
+    background-image: url('../img/Teddy.png');
+}
+
+.other {
+    background-image: url('../img/assemlage1_resized.jpg');
+}
+
+.thumb_p {
+    text-align: center;
 }
 /*
 .galleryname {
@@ -108,7 +152,7 @@ ul {
     margin: 0 auto;
 }
 */
-
+/*
 .print_thumb {
     height: 200px;
     width: 200px;
@@ -162,6 +206,7 @@ ul {
     margin-bottom: 5px;
 }
 
+*/
 /*
 BELOW NEEDS TWEAKING
 */
@@ -195,6 +240,74 @@ BELOW NEEDS TWEAKING
     height: 200px;
     margin: 0 auto;
   }
+
+/* Form */
+
+.form-section {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    background-image: url('../img/frame_resized.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+
+.signup-form {
+    color: #333;
+    max-width: 280px;
+    max-height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.signup-form h2 {
+    color: #333;
+    font-family: La;
+}
+
+/* Gallery Styling */
+img {
+    width: 100%;
+    border-radius: 1%;
+  }
+  
+  .masonry {
+      column-count: 4;
+      column-gap: 16px;
+      margin: 0 auto;
+      width: 90%;
+  }
+  
+  .masonry .mItem {
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  @media (max-width: 1199px) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .masonry {
+      column-count: 1;
+    }
+  }
   
   /*.paragraph {
     display: none; /* Hide paragraph on mobile */
@@ -202,11 +315,14 @@ BELOW NEEDS TWEAKING
   
   /* Media query for tablet and desktop */
   @media screen and (min-width: 768px) {
-    .print_thumb, .photo_thumb, .other_thumb {
+    .thumb_container {
       display: inline-block;
       width: 300px;
       height: 300px;
-      margin: 0;
+    }
+    .thumb {
+        width: 300px;
+        height: 300px;
     }
 }
   
@@ -219,4 +335,6 @@ COMMENTS
 /*
 font-family: 'Bebas Neue', sans-serif;
 font-family: 'Lato', sans-serif;
-*/
+
+
+Author identity unknown *** Please tell me who you are. Run git config --global user.email "patrickcoughlan@yahoo.co.uk" git config --global user.name "Patrick" to set your account's default identity. Omit --global to set the identity only in this repository. fatal: unable to auto-detect email address (got 'codeany@fe35ba626cea.(none)')
