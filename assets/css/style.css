@@ -53,6 +53,7 @@ h2 {
     color: #555;
     letter-spacing: 7px;
     text-align: center;
+    font-size: 2em;
 }
 
 /*
@@ -82,7 +83,9 @@ a:link {
     width: 100%;
     height: auto;
 }
+/*
 
+BELOW NOW OBSELETE - SEE REVISED STYLING 
 #menu {
     position: relative;
     display: block;
@@ -99,7 +102,20 @@ a:link {
     padding-right: 20px;
     font-size: 25px;
 }
+*/
 
+#menu {
+    text-align: center;
+    position: relative;
+
+}
+
+#menu li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
 /* IS THIS RULE OBSELETE?
 .gallery {
     width: 200px;
@@ -236,6 +252,7 @@ BELOW NEEDS TWEAKING
     margin: 1%;
     padding: 2%;
     color: #555;
+    margin-top: 3%;
 }
 
 .copyright {
@@ -336,7 +353,7 @@ img {
 }
 
 /* Media query for desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
     .thumb_container {
       display: inline-block;
       width: 400px;
