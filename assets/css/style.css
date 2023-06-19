@@ -120,6 +120,10 @@ BELOW NOW OBSELETE - SEE REVISED STYLING
     padding-right: 10px;
 
 }
+
+.menu_item {
+    /*STYLE NAV MENU ITEMS?*/
+}
 /* IS THIS RULE OBSELETE?
 .gallery {
     width: 200px;
@@ -172,6 +176,11 @@ BELOW NOW OBSELETE - SEE REVISED STYLING
     color: #111;
     border-radius: 5px;
     filter: opacity(0.75);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2%;
+
+
 }
 
 /*
