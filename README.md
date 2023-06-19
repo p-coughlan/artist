@@ -37,19 +37,3 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
-
-
-READ ME NOTES:
-
-Template for masonry gallery:
-https://freefrontend.com/css-masonry-layout-examples/
-Author: Omar Trujillo
-https://codepen.io/CyFox/pen/MWWEwjg
-Changes made: margin, centering, border-radius and border thickness/color
-
-
-ISSUES:
-unable to commit or push to github
-1st person on not?
-
-
