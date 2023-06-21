@@ -1,22 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&display=swap');
 
-/*
-images in img file are test images - resize / reformat for web
-
-content not scrolling - why? FIX THIS
-
-remove hyperlink underline from H1 logo
-*/
-
+/*remove default styling*/
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* READme link to image: https://www.etsy.com/uk/listing/1201286332/wooden-floor-photography-backdrop-white?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_uk_en_gb_b-paper_and_party_supplies-party_supplies-party_decor-backdrops_and_props&utm_custom1=_k_Cj0KCQjwj_ajBhCqARIsAA37s0y4hS9tp3WoEAbsDDnMnu3Scibqm5nmZ9J1BYANPos2CzMI5MHO2qUaAjBZEALw_wcB_k_&utm_content=go_12604682523_120630437220_508814476724_aud-463075091718:pla-316241129464_c__1201286332engb_500265943&utm_custom2=12604682523&gclid=Cj0KCQjwj_ajBhCqARIsAA37s0y4hS9tp3WoEAbsDDnMnu3Scibqm5nmZ9J1BYANPos2CzMI5MHO2qUaAjBZEALw_wcB */
-.background {     /* make opaque*/
+/*background image to be fixed with content scrolling over*/
+.background { 
 
     min-height: 100vh;
     width: 100%;
@@ -25,10 +18,8 @@ remove hyperlink underline from H1 logo
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-   
     overflow: hidden;
     position: relative;
-    
 }
 
 body {
@@ -36,10 +27,10 @@ body {
     font-size: 20px;
     color: #555;
 }
-
-/*
-change H1 and H2 logo elements to JOSEFINA SANS UPPER CASE
-*/
+/* <p> text to stand out against opaque imagery behind*/
+p {
+    color: #111;
+}
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
@@ -59,9 +50,8 @@ h2 {
 .gallery_name {
     padding-top: 0.5em;
 }
-/*
-style h1 and h2 logo separately
-*/
+
+/* style h1 and h2 logo separately*/
 
 #logo_h1 {
     font-size: 300%;
@@ -78,40 +68,21 @@ style h1 and h2 logo separately
     text-decoration: none;
 }
 
+/*remove default syling from menu links*/
 a:link {
     text-decoration: none;
   }
 
+/* nav 'bar' styling */
 #navigation {
     width: 100%;
     height: auto;
     padding-bottom: 30px;
 }
-/*
-
-BELOW NOW OBSELETE - SEE REVISED STYLING 
-#menu {
-    position: relative;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.pages li {
-    width: auto;
-    display: inline;
-    gap: 30%;
-    border: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 25px;
-}
-*/
 
 #menu {
     text-align: center;
     position: relative;
-
 }
 
 #menu li {
@@ -124,22 +95,15 @@ BELOW NOW OBSELETE - SEE REVISED STYLING
 .menu_item {
     /*STYLE NAV MENU ITEMS?*/
 }
-/* IS THIS RULE OBSELETE?
-.gallery {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    padding: 30px;
-}
-*/
+
+/* gallery thumbnail, h2 and p element */
 
 #gallery_thumbs {
     text-align: center;
-
 }
 
 .thumb_container {
-    margin: 5vw;
+    margin: 4vw;
 }
 
 .thumb {
@@ -183,70 +147,7 @@ BELOW NOW OBSELETE - SEE REVISED STYLING
 
 }
 
-/*
-.galleryname {
-    text-align: center;
-    margin: 0 auto;
-}
-*/
-/*
-.print_thumb {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-color: red;
-    background-image: url('../img/push_button.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    border: 1px solid #555;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-.photo_thumb {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-color: red;
-    position: center;
-    background-image: url('../img/Teddy.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    border: 1px solid #555;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-.other_thumb {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-color: red;
-    position: center;
-    background-image: url('../img/assemlage1_resized.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    border: 1px solid #555;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-*/
-/*
-BELOW NEEDS TWEAKING
-*/
+/* about section */
 
 .about {
     width: 90%;
@@ -259,22 +160,21 @@ BELOW NEEDS TWEAKING
     padding: 10px;
 }
 
+/* footer */
+
 #footer {
     position: relative;
     bottom: 0;
     width: 100%;
-
 }
 
 .social-networks {
     text-align: center;
     position: relative;
-
 }
 
 .social-networks li {
     display: inline;
-
 }
 
 .social-networks i {
@@ -319,6 +219,22 @@ BELOW NEEDS TWEAKING
     
 }
 
+#email {
+    border: solid 1px #333;
+    width: 90%;
+    height: 25px;
+}
+
+#subscribe, #submit {
+    width: 60px;
+    height: 60px;
+    font-family: inherit;
+    border-radius: 50%;
+    border: solid 1px #111;
+    background-color: #c83b27;
+    color: white;
+}
+
 textarea {
     border: solid 1px #555;
     border-radius: 10px;
@@ -330,7 +246,7 @@ textarea {
     color: #333;
     text-align: center;
     margin: 0 auto;
-    border: solid 1px #555;
+    /*border: solid 1px #555;*/
     border-radius: 10px;
     padding: 5px;
     
@@ -401,6 +317,7 @@ img {
       display: inline-block;
       width: 400px;
       height: 400px;
+      margin: 5vw;
     }
     .thumb {
         width: 400px;
@@ -419,10 +336,3 @@ img {
 /*
 COMMENTS
 */
-
-/*
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Lato', sans-serif;
-
-
-Author identity unknown *** Please tell me who you are. Run git config --global user.email "patrickcoughlan@yahoo.co.uk" git config --global user.name "Patrick" to set your account's default identity. Omit --global to set the identity only in this repository. fatal: unable to auto-detect email address (got 'codeany@fe35ba626cea.(none)')
