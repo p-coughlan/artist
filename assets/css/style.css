@@ -131,8 +131,8 @@ a:link {
 */
 
 .thumb:hover {
-    width: 105%;
-    height: 105%;
+    /*width: 105%;
+    height: 105%;*/
     opacity: 0.8;
     transition: 0.3s;
     overflow: hidden;
@@ -182,7 +182,7 @@ a:link {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding
+    padding-top: 50px; /*?*/
 }
 
 .social-networks {
