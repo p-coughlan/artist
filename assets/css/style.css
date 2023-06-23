@@ -30,6 +30,7 @@ body {
 /* <p> text to stand out against opaque imagery behind*/
 p {
     color: #111;
+    text-align: center;
 }
 
 h1 {
@@ -87,13 +88,18 @@ a:link {
 
 #menu li {
     display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 
 }
 
 .menu_item {
-    /*STYLE NAV MENU ITEMS?*/
+    color: #c83b27;
+    text-transform: uppercase;
+}
+
+.menu_item:hover {
+    color: #3b5f9d;
 }
 
 /* gallery thumbnail, h2 and p element */
@@ -118,7 +124,7 @@ a:link {
     border: 1px solid #555;
     margin: 0 auto;
     display: block;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-bottom: 5px;
 }
 /* INVESTIGATE USE OF ANIMATION WHEN HOVER OVER THUMB
@@ -155,18 +161,17 @@ a:link {
     background-color: white;
     color: #111;
     border-radius: 5px;
-    filter: opacity(0.75);
+    filter: opacity(0.85);
     max-width: 300px;
     margin: 0 auto;
     padding: 2%;
-
 
 }
 
 /* about section */
 
 .about {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     color: #111;
     background-color: white;
@@ -174,8 +179,30 @@ a:link {
     border-radius: 5px;
     max-width: 800px;
     padding: 10px;
+    margin-top: 50px;
+    border: solid 1px #555;
 }
 
+.here {
+    color: #c83b27;
+}
+
+#about_img {
+    width: 85%;
+    height: auto;
+    max-width: 800px;
+    object-fit: fill;
+    object-position: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+/*
+#about_img img {
+    object-fit: fill;
+}
+*/
 /* footer */
 
 #footer {
@@ -206,6 +233,7 @@ a:link {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+    color: #c83b27;
 }
 
 .div-link {
@@ -232,7 +260,7 @@ a:link {
     border-radius: 20px;
     max-width: 400px;
     border: solid 1px #555;
-    filter: opacity(0.75);
+    filter: opacity(0.85);
     
 }
 
@@ -240,6 +268,7 @@ a:link {
     border: solid 1px #333;
     width: 90%;
     height: 25px;
+    font-family: "Lato";
 }
 
 #subscribe, #submit {
@@ -257,6 +286,8 @@ textarea {
     border-radius: 10px;
     width: 90%;
     height: 200px;
+    padding: 5px;
+    font-family: "Lato";
 }
 
 .signup-form {
@@ -279,6 +310,17 @@ img {
     width: 100%;
     border-radius: 1%;
   }
+
+.gallery_p {
+    background-color: white;
+    opacity: (0.75);
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+}
   
   .masonry {
       column-count: 4;
@@ -305,7 +347,7 @@ img {
     }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 500px) {
     .masonry {
       column-count: 1;
     }
