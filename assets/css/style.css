@@ -127,33 +127,23 @@ a:link {
     /*margin-top: 20px;*/
     margin-bottom: 5px;
 }
-/* INVESTIGATE USE OF ANIMATION WHEN HOVER OVER THUMB
-.thumb:hover {
-    animation: forwards;
-    transition: 0.5s;
-}
-
-@-o-keyframes
-*/
 
 .thumb:hover {
-    /*width: 105%;
-    height: 105%;*/
     opacity: 0.8;
     transition: 0.3s;
     overflow: hidden;
 }
 
 .print {
-    background-image: url('../img/push_button.jpg');
+    background-image: url('../img/print1.jpg');
 }
 
 .photo {
-    background-image: url('../img/Teddy.png');
+    background-image: url('../img/p3.jpg');
 }
 
 .other {
-    background-image: url('../img/assemlage1_resized.jpg');
+    background-image: url('../img/as1_resized.jpg');
 }
 
 .thumb_p {
@@ -198,18 +188,14 @@ a:link {
     border-radius: 5px;
     margin-top: 70px;
 }
-/*
-#about_img img {
-    object-fit: fill;
-}
-*/
+
 /* footer */
 
 #footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding-top: 50px; /*?*/
+    padding-top: 50px;
 }
 
 .social-networks {
@@ -248,11 +234,6 @@ a:link {
     width: 70%;
     height: auto;
     background-color: white;
-    /*background-image: url('../img/frame_resized.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    */
     overflow: hidden;
     text-align: center;
     margin: 0 auto;
@@ -261,7 +242,6 @@ a:link {
     max-width: 400px;
     border: solid 1px #555;
     filter: opacity(0.85);
-    
 }
 
 #email {
@@ -269,6 +249,7 @@ a:link {
     width: 90%;
     height: 25px;
     font-family: "Lato";
+    border-radius: 5px;
 }
 
 #subscribe, #submit {
@@ -294,7 +275,6 @@ textarea {
     color: #333;
     text-align: center;
     margin: 0 auto;
-    /*border: solid 1px #555;*/
     border-radius: 10px;
     padding: 5px;
     
@@ -319,6 +299,9 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 30px;
+    filter: opacity(0.75);
+    color: black;
+    border-radius: 10px;
 
 }
   
@@ -353,10 +336,6 @@ img {
     }
   }
   
-  /*.paragraph {
-    display: none; /* Hide paragraph on mobile */
-  
-  
   /* Media query for tablet and desktop */
   @media screen and (min-width: 768px) {
     .thumb_container {
@@ -389,9 +368,3 @@ img {
         font-size: 300%;
     }
 }
-  
-    /*.paragraph {
-      display: block; /* Show paragraph on tablet and desktop */
-/*
-COMMENTS
-*/
