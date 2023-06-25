@@ -106,27 +106,30 @@ For a more detailed guide with screenshots, click [here.](https://docs.github.co
 
 ## Validator Testing
 
-Both the HTML5 and CSS code was put through WSC validators.
+### WC3 Validation
 
-HTML5 passed with a warning that I decided was best not to change as it would have ment incorporating an unnecessary div element.
+CSS and HTML passed W3 validation checks
 
-![validator warning](media/validator-warning.png)
+![CSS](assets/media/css_validate.jpg)
 
-Css3 passed without errors.
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
-![CSS Validator](media/css%20validator.png)
+![CSS Validator](assets/media/html_validate.jpg)
 
-Lighouse showed good scores.
+Lighthouse reported good scores
 
-![Lighthouse](media/lighthouse.png)
+![Lighthouse](assets/media/lighthouse.jpg)
 
 
 ## Roadmap
 What will I improve / work on in the future?
 
-## Credits
-
-Credits here --
 ## Acknowledgements
 
  - [Masonry Gallery Template by Omar Trujillo](https://codepen.io/CyFox/pen/MWWEwjg)
@@ -134,7 +137,12 @@ Credits here --
  - [README editor](https://readme.so/)
  - [Google Fonts](https://fonts.google.com/)
  - [Eyedropper Tool](https://eyedropper.org/)
+ - [Helpful README](https://github.com/Florajenner/sustainable-life/tree/main)
 
+## Thanks to
 
+My mentor Spencer Bariball
 
+My tutor at WAES Komal Karir 
 
+My fellow course attendees currently studying the L5 Diploma in Web Application Development
