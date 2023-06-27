@@ -56,6 +56,10 @@ All imagery on the site is original artwork by the artsist - Patrick Coughlan. T
 
 ![Homepage](assets/media/homepage.jpg)
 
+- Favicon - created using the 'Bebas Neue' font against a background colour matched from website 'white wall' background. This will help users identify website among open tabs and make finding the site in browser history easier, also increasing familiarity.
+
+![Favicon](/android-chrome-192x192.png)
+
 ## Languages, Tools & Technologies Used
 
 * HTML
@@ -66,6 +70,7 @@ All imagery on the site is original artwork by the artsist - Patrick Coughlan. T
 * Google Fonts
 * Font Awesome
 * Balsamiq Wireframe Tool
+* Favicon Generator
 
 ## Deployment
 
@@ -128,9 +133,28 @@ Lighthouse reported good scores
 
 
 ## Roadmap
-What will I improve / work on in the future?
 
-## Acknowledgements
+* Add 404 page
+* Insert more meaningful comments into HTML and CSS for other potential users
+* 
+* 
+* 
+* ## Acknowledgements
+* ## Acknowledgements
+* ## Acknowledgements
+* ## Acknowledge ## Acknowledgements
+* ## Acknowledgements
+* ## Acknowledgements
+* ## Acknowledgements
+* ## Acknowledgements
+* ## Acknowledgements
+* ## Acknowledgements
+  * ## Acknowledgements
+
+
+
+
+
 
  - [Masonry Gallery Template by Omar Trujillo](https://codepen.io/CyFox/pen/MWWEwjg)
  - [Background Image Source](https://tinyurl.com/yfenv9ym)
@@ -138,6 +162,7 @@ What will I improve / work on in the future?
  - [Google Fonts](https://fonts.google.com/)
  - [Eyedropper Tool](https://eyedropper.org/)
  - [Helpful README](https://github.com/Florajenner/sustainable-life/tree/main)
+ - [Great Favicon Generator](https://favicon.io/favicon-generator/)
 
 ## Thanks to
 
@@ -145,4 +170,4 @@ My mentor Spencer Bariball
 
 My tutor at WAES Komal Karir 
 
-My fellow course attendees currently studying the L5 Diploma in Web Application Development
+My fellow course attendees currently studying the Code Institute L5 Diploma in Web Application Development

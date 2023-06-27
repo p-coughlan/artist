@@ -289,7 +289,7 @@ textarea {
 img {
     width: 100%;
     border-radius: 1%;
-  }
+}
 
 .gallery_p {
     background-color: white;
@@ -301,7 +301,6 @@ img {
     filter: opacity(0.75);
     color: black;
     border-radius: 10px;
-
 }
   
   .masonry {
@@ -309,7 +308,7 @@ img {
       column-gap: 16px;
       margin: 0 auto;
       width: 90%;
-  }
+}
   
   .masonry .mItem {
     display: inline-block;
