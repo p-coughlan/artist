@@ -135,7 +135,6 @@ Lighthouse reported good scores
 ## Roadmap
 
 * Add 404 page
-* Insert more meaningful comments into HTML and CSS for other potential users
 * Create a 'news' section so users can read updated information about current or upcoming shows / exhibitions
 * Create an 'archive' of past or not 'immediately relevant' work
 * Create sub categories as the current site only touches the surface (i.e. photography could include film based work, portraiture, studio work, conceptual work etc)
@@ -150,11 +149,12 @@ Lighthouse reported good scores
  - [Eyedropper Tool](https://eyedropper.org/)
  - [Helpful README](https://github.com/Florajenner/sustainable-life/tree/main)
  - [Great Favicon Generator](https://favicon.io/favicon-generator/)
- - Code Institute's Love Running project for inspiration and social media link formatting
+  
+* Code Institute's Love Running project for inspiration and social media link formatting
 
 ## Thanks to
 
-My mentor Spencer Bariball
+My mentor Spencer Barriball
 
 My tutor at WAES Komal Karir 
 
